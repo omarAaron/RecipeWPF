@@ -1,0 +1,27 @@
+﻿<Window x:Class="RecipeApp.FindRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="FindRecipe" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Filter By Recipe Name" Target="{Binding ElementName=txtName}" />
+            <TextBox Name="RecipeName" />
+
+            <Label Content="Filter By Ingridents" Target="{Binding ElementName=txtIngredients}" />
+            <TextBox Name="Ingredients" />
+
+            <Label Content="Filter By Food Group" Target="{Binding ElementName=txtFoodGroup}" />
+            <TextBox Name="FoodGroup" />
+
+            <Label Content="Filter By Calories" Target="{Binding ElementName=txtCalories}" />
+            <TextBox Name="Calories" Text="0" />
+
+
+            <Button Content="Enter" Click="OK_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="RecipeApp.EnterRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="EnterRecipe" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+		<Label Content="Enter Recipe Name" Target="{Binding ElementName=txtName}" />
+		<TextBox Name="RecipeName" />
+
+        <Label Content="Enter Number of Ingridents" Target="{Binding ElementName=txtIngredients}" />
+        <TextBox Name="Ingredients" />
+
+        <Label Content="Enter Number of Steps" Target="{Binding ElementName=txtSteps}" />
+        <TextBox Name="Steps" />
+
+
+         <Button Content="Enter" Click="OK_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

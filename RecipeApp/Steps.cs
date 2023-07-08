@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RecipeApp
+{
+    public class Steps
+    {
+        public string Description { get; set; }
+    }
+}

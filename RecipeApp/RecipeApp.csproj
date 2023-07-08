@@ -55,6 +55,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EnterIngredients.xaml.cs">
+      <DependentUpon>EnterIngredients.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnterSteps.xaml.cs">
+      <DependentUpon>EnterSteps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FindRecipe.xaml.cs">
+      <DependentUpon>FindRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Recipe.cs" />
+    <Compile Include="Steps.cs" />
+    <Page Include="EnterIngredients.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnterRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnterSteps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FindRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,6 +90,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="EnterRecipe.xaml.cs">
+      <DependentUpon>EnterRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ingredients.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

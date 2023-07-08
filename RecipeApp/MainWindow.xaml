@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:RecipeApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="79,345,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    <Grid AutomationProperties.Name="button_hello">
+        <Button Content="Enter Recipe" HorizontalAlignment="Left" Margin="41,66,0,0" VerticalAlignment="Top" Width="154" Click="EnterRecipe" Background="#FFDDDDDD"/>
+        <Button Content="Display Recipe" HorizontalAlignment="Left" Margin="41,111,0,0" VerticalAlignment="Top" Width="154" Click="DisplayRecipe"/>
+        <TextBlock x:Name="txtDisplay" HorizontalAlignment="Left" Margin="431,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="299" Width="244"/>
+        <Button Content="Find Recipe" HorizontalAlignment="Left" Margin="41,158,0,0" VerticalAlignment="Top" Width="154" Click="FilterRecipe"/>
 
     </Grid>
+    
 </Window>
